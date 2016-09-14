@@ -26,7 +26,7 @@ end
 get '/clinics/:id' do
   id = params[:id]
   @clinic = Clinic.find(id)
-  @reviews 
+  @comments = @clinic.comments
 
   erb :'clinics_show'
 end
