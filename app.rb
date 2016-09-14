@@ -27,6 +27,7 @@ get '/clinics/:id' do
   id = params[:id]
   @clinic = Clinic.find(id)
   @comments = @clinic.comments
+  @students = @clinic.students
 
   erb :'clinics_show'
 end
