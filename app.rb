@@ -24,6 +24,9 @@ get '/clinics' do
 end
 
 get '/clinics/:id' do
+  id = params[:id]
+  @clinic = Clinic.find(id)
+  @reviews 
 
   erb :'clinics_show'
 end
