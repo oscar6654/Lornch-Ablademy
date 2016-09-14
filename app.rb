@@ -18,6 +18,7 @@ get '/' do
 end
 
 get '/clinics' do
+  @clinics = Clinic.all
 
   erb :'clinics_index'
 end
